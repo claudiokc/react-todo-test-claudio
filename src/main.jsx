@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { ClunkyTodoList } from "./ClunkyTodoList.jsx";
+// FIXED: Corrected import path to match actual file extension
+import { ClunkyTodoList } from "./ClunkyTodoList.tsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -6,6 +6,8 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default [
   { ignores: ['dist'] },
   {
+    // TODO: ESLint config only covers JS/JSX files, not TypeScript (.ts/.tsx)
+    // Should include: files: ['**/*.{js,jsx,ts,tsx}']
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
