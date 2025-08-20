@@ -24,7 +24,7 @@ import {
 } from "@mui/icons-material";
 
 // TypeScript interfaces for type safety
-interface Task {
+export interface Task {
   id: number;
   text: string;
   completed: boolean;
@@ -39,7 +39,7 @@ interface TodoItemProps {
   onRemove: (id: number) => void;
 }
 
-function TodoItem({ task, onToggle, onRemove }: TodoItemProps) {
+export function TodoItem({ task, onToggle, onRemove }: TodoItemProps) {
   return (
     <ListItem disablePadding>
       <ListItemIcon>
